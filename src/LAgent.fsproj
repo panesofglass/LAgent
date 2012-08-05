@@ -7,10 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{95693707-bd9e-49ea-a67c-5ac802b4674b}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Agents</RootNamespace>
-    <AssemblyName>Agents</AssemblyName>
+    <RootNamespace>LAgent</RootNamespace>
+    <AssemblyName>LAgent</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <Name>Agents</Name>
+    <Name>LAgent</Name>
+    <FscToolPath>..\lib\FSharp\</FscToolPath>
+    <TargetFrameworkProfile />
+    <RestorePackages>true</RestorePackages>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,13 +33,14 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
+  <Import Project="$(SolutionDir)\lib\FSharp\Microsoft.FSharp.Targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <ItemGroup>
     <Compile Include="AgentSystem.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
-      <HintPath>lib\FSharp\FSharp.Core.dll</HintPath>
+      <HintPath>..\lib\FSharp\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
