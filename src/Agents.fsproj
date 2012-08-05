@@ -31,17 +31,17 @@
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" />
   <ItemGroup>
-    <None Include="AgentSamples.fsx" />
-    <None Include="AuctionAgent.fsx" />
-    <None Include="AuctionOriginal.fsx" />
-    <None Include="BookExamples1.fsx" />
-    <None Include="BookExemples2.fsx" />
-    <None Include="MultipleWorkers.fsx" />
+    <None Include="..\samples\AgentSamples.fsx" />
+    <None Include="..\samples\AuctionAgent.fsx" />
+    <None Include="..\samples\AuctionOriginal.fsx" />
+    <None Include="..\samples\BookExamples1.fsx" />
+    <None Include="..\samples\BookExemples2.fsx" />
+    <None Include="..\samples\MultipleWorkers.fsx" />
     <Compile Include="AgentSystem.fs" />
-    <None Include="MapReduce.fsx" />
-    <None Include="ActiveObjectSamples.fsx" />
-    <None Include="ActiveObjectMapReduce.fsx" />
-    <None Include="MailboxProcessors.fsx" />
+    <None Include="..\samples\MapReduce.fsx" />
+    <None Include="..\samples\ActiveObjectSamples.fsx" />
+    <None Include="..\samples\ActiveObjectMapReduce.fsx" />
+    <None Include="..\samples\MailboxProcessors.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
