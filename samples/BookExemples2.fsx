@@ -1,5 +1,5 @@
-﻿#load "AgentSystem.fs"
-#r "FSharp.PowerPack.dll"
+﻿#load "..\src\AgentSystem.fs"
+#r "..\lib\FSharp\FSharp.PowerPack.dll"
 open AgentSystem.LAgent
 
 open System.Collections.Generic

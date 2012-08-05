@@ -1,4 +1,4 @@
-﻿#load "AgentSystem.fs"
+﻿#load "..\src\AgentSystem.fs"
 open AgentSystem.LAgent
 
 type msg1 = Message1 | Message2 of int | Message3 of string

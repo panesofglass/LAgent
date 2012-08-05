@@ -1,4 +1,4 @@
-﻿#load "AgentSystem.fs"
+﻿#load "..\src\AgentSystem.fs"
 #nowarn "40"
 
 open System

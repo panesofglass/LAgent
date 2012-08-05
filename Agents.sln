@@ -19,6 +19,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A6F215
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{218C55AB-F575-44F0-B78D-C638E7E3BED4}"
+	ProjectSection(SolutionItems) = preProject
+		samples\ActiveObjectMapReduce.fsx = samples\ActiveObjectMapReduce.fsx
+		samples\ActiveObjectSamples.fsx = samples\ActiveObjectSamples.fsx
+		samples\AgentSamples.fsx = samples\AgentSamples.fsx
+		samples\AuctionAgent.fsx = samples\AuctionAgent.fsx
+		samples\AuctionOriginal.fsx = samples\AuctionOriginal.fsx
+		samples\BookExamples1.fsx = samples\BookExamples1.fsx
+		samples\BookExemples2.fsx = samples\BookExemples2.fsx
+		samples\MailboxProcessors.fsx = samples\MailboxProcessors.fsx
+		samples\MapReduce.fsx = samples\MapReduce.fsx
+		samples\MultipleWorkers.fsx = samples\MultipleWorkers.fsx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

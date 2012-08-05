@@ -1,4 +1,4 @@
-﻿#load "AgentSystem.fs"
+﻿#load "..\src\AgentSystem.fs"
 open AgentSystem.LAgent
 
 let counter0 =
