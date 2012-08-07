@@ -139,8 +139,6 @@ Target "All" DoNothing
 // Build order
 "Clean"
   ==> "BuildApp" <=> "CopyLicense"
-  ==> "GenerateDocumentation"
-  ==> "ZipDocumentation"
   ==> "BuildNuGet"
   ==> "Deploy"
 
