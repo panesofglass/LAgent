@@ -7,7 +7,7 @@ open System.IO
 // properties
 let projectName = "LAgent"
 let version = if isLocalBuild then "1.0." + System.DateTime.UtcNow.ToString("yMMdd") else buildVersion
-let projectSummary = ""
+let projectSummary = "An agent framework in F#"
 let projectDescription = projectSummary
 let authors = ["Luca Bolognese"; "panesofglass"]
 let mail = "ryan.riley@panesofglass.org"
@@ -139,6 +139,8 @@ Target "All" DoNothing
 // Build order
 "Clean"
   ==> "BuildApp" <=> "CopyLicense"
+  ==> "GenerateDocumentation"
+  ==> "ZipDocumentation"
   ==> "BuildNuGet"
   ==> "Deploy"
 

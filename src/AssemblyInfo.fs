@@ -18,9 +18,15 @@ exception ReturnNoneException183c26a427ae489c8fd92ec21a0c9a59
 
 [<assembly: Guid ("95693707-bd9e-49ea-a67c-5ac802b4674b")>]
 
-[<assembly: AssemblyVersion ("1.0.120805")>]
+[<assembly: AssemblyTitle ("An agent framework in F#")>]
 
-[<assembly: AssemblyFileVersion ("1.0.120805")>]
+[<assembly: AssemblyDescription ("An agent framework in F#")>]
+
+[<assembly: AssemblyProduct ("An agent framework in F#")>]
+
+[<assembly: AssemblyVersion ("1.0.120807")>]
+
+[<assembly: AssemblyFileVersion ("1.0.120807")>]
 
 [<assembly: AssemblyDelaySign (false)>]
 
